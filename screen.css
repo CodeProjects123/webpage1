@@ -1,5 +1,210 @@
+
+
 #imgOfAudi{
-	bottom: 0%;
+	bottom: 10%;
 	right: 0%;
+	width: 700px;
 	position: absolute;
+}
+#imgOfRedAudi{
+	bottom: 5%;
+	right: 3%;
+	position: absolute;
+	width:400px;
+    
+	
+}
+
+#imgOfBlueAudi{
+	bottom: 25%;
+	left: 12%;
+	width:730px;
+	position: absolute;
+}
+#imgOfOrangeAudi{
+	bottom: 30%;
+	right: 20%;
+	width:400px; /* you can use % */
+   
+	position: absolute;
+}
+#imgOfYellowAudi{
+	bottom: 0%;
+	left: 3%;
+	width:450px;
+	position: absolute;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+#imgOfBlackAudi{
+	position: absolute;
+	width:450px;
+}
+#imgOfLogo{
+	width: 30%;
+}
+.navLink{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#navLink1{
+	padding-left:390px;
+	padding-right: 30px;
+}
+
+a{
+	font-family: 'Prata', serif;
+	
+}
+
+#h1MidReference{
+	padding-left: 310px;
+}
+.h1Box{
+	font-family: 'Prata', serif;
+	margin-top:160px;
+	margin-left: 300px;
+	width: 300px;
+	
+	
+}
+#h1OfAboutPG{
+	font-family: 'Prata', serif;
+	font-size: 45px;
+	padding-top: 25px;
+	text-align: center;
+}
+#h1OfIndexPG{
+	color: black;
+	
+	
+	font-size: 45px;
+}
+
+#h1OfColorPG{
+	font-size: 45px;
+	padding-top: 25px;
+	font-family: 'Prata', serif;
+	text-align: center;
+}
+@media screen and (max-width:800px) {
+  .h1Box {
+    width:100%; 
+	margin-top:5px;
+	margin-left: 10px;
+  }
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  #imgOfRedAudi{
+	display: block;
+	max-width: 70%;
+    height: auto;
+	position: fixed;\
+	display: inline-block;
+ }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  #imgOfBlueAudi{
+	  
+	position: fixed;
+	max-width: 120%;
+    height: auto;
+	
+ }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  #imgOfOrangeAudi{
+	display: block;
+	max-width: 70%;
+    height: auto;
+	display: inline-block;
+ }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  #imgOfYellowAudi{
+	display: block;
+	max-width: 70%;
+    height: auto;
+	display: inline-block;
+ }
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0.1px;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: 'Prata', serif;
+  font-size: 30px;
+    
+   
+   cursor: pointer;
+   -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+   -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+   box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+  
+  
+  
+}
+.column:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, 0.5);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+  
+  .column:hover:before {
+    background: none;
+  }
+  
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.imgSize{
+	float: left;
+	width: 100%;
+	/*-wbkit-filter: grayscale(100%);
+	filter: grayscale(100%);*/
+	box-shadow: 0 3000px rgba(0, 0, 0, 0.4) inset;
+	
+	height: auto;
+}
+.imgSize:before {
+    background: rgba(0,0,0, 0.6);
+  }
+.descOfImage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.7);
+  
 }
