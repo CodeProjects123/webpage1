@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Audi R8</title>
+	<!--link to bootstrap library-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--use of jquery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--use of bootstrap library-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="screen.css">
+	<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet"></head>
+
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}</style>
+<body>
+<!--nav bar tag with bootstrap class: navbar-inverse displays a black version of the navbar whereas default is white-->
+	<nav class="navbar navbar-inverse">
+		<!--div tag with bootstrap class: container-fluid allows for the nav bar to change with the width of the screen-->
+		<div class="container-fluid">
+			<!--div tag with bootstrap class navbar-header allows for the logo to be placed on the far left of the screen and view of the nav-->
+			<div class="navbar-header">
+				<!--button tag with bootstrap class navbar-toggle allows for the use of a hamburger icon and data-toggle collapse allows to control the collapse and data-targer="#myNavbar allows" gives an id to the items that will collapse-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<!--span tag with bootstrap class: icon-bar which displays the horizontal lines to display a full hamburger icon-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--div encloses img with an id to be able to be accessed for css3-->
+				<div id="imgOfLogo">
+					<img src="http://pluspng.com/img-png/audi-logo-png-audi-logo-eps-pdf-500.png" class="img-responsive" alt="audi logo">
+				</div>
+			</div>
+			<!--div tag with bootstrap class to collapse items and the id which is used in a couple of lines before this-->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<!--ul tag with bootstrap class -->
+				<ul class="nav navbar-nav">
+					<!--li tag with bootstrap class: active which shows the page that is current and id created by me to be used in css3-->
+					<li id="navLink1"><a href="index.html">Home</a></li>
+					<!--li tag with class created by me to use in css3 and style the links-->
+					<li class="active navLink"><a href="#">About</a></li>
+					<li class="navLink"><a href="models.html">Models</a><li>
+					<li class="navLink"><a href="colors.html">Colors</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<h1 id="h1OfAboutPG">2018 Audi R8 Specs </h1>
+	
+	<div class="row">
+		<div class="column">
+			<img src="https://www.carmagazine.co.uk/Images/PageFiles/80450/Audi_R8_RWS_9.jpg" class="imgSize" alt="image of engine">
+			<div class="descOfImage">Engine</div>
+		</div>
+		<div class="column">
+			<img src="https://car-images.bauersecure.com/pagefiles/15350/1040x585/audir8_2015_1.jpg" class="imgSize" alt="image of engine">
+			<div class="descOfImage">Horsepower</div>
+		</div>
+		<div class="column">
+			<img src="http://imagesvc.timeincapp.com/v3/foundry/image/?q=70&w=1440&url=http%3A%2F%2Fd254andzyoxz3f.cloudfront.net%2F1000-horsepower-audi-r8-hero.jpg" class="imgSize" alt="image of engine">
+			<div class="descOfImage">Torque</div>
+		</div>
+		
+		<div class="column">
+			<img src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/17q2/678295/2017-audi-r8-spyder-instrumented-test-review-car-and-driver-photo-683069-s-original.jpg" class="imgSize" alt="image of engine">
+			<div class="descOfImage">Price</div>
+		</div>
+		<div class="column">
+			<img src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/18q1/699327/2018-audi-r8-rws-first-drive-review-car-and-driver-photo-703804-s-original.jpg" class="imgSize" alt="image of engine">
+			<div class="descOfImage">Acceleration (0-60mph)</div>
+		</div>
+		<div class="column">
+			<img src="http://www.automotorblog.com/wp-content/uploads/2016/11/2017-Audi-R8-V10-Plus-Exclusive-Edition-4.jpg" class="imgSize" alt="image of engine">
+			<div class="descOfImage">Valvetrain</div>
+		</div>
+		
+		<div class="column">
+			<img src="https://st.motortrend.ca/uploads/sites/42/2015/07/2017-Audi-R8-V10-Plus-badge-04.jpg" class="imgSize" alt="image of engine">
+			<div class="descOfImage">MPG</div>
+		</div>
+		
+		<div class="column">
+			<img src="https://photos.motorcar.com/new-2018-audi-r8_spyder-v10plusquattroawd-8966-17564812-10-640.jpg" class="imgSize" alt="image of engine">
+			<div class="descOfImage">Transmission</div>
+		</div>
+		<div class="column">
+			<img src="http://automobile.gayot.com/wp-content/uploads/sites/2/2013/08/Speedometer-of-the-Audi-R8-V10-624x356.jpg" class="imgSize" alt="image of engine">
+			<div class="descOfImage">Top Speed</div>
+		</div>
+	</div>
+	
+</body>
+</html>
