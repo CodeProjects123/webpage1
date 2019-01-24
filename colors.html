@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--link to bootstrap library-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--use of jquery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--use of bootstrap library-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="screen.css">
+	<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet"></head>
+</head>
+<body>
+<!--nav bar tag with bootstrap class: navbar-inverse displays a black version of the navbar whereas default is white-->
+	<nav class="navbar navbar-inverse">
+		<!--div tag with bootstrap class: container-fluid allows for the nav bar to change with the width of the screen-->
+		<div class="container-fluid">
+			<!--div tag with bootstrap class navbar-header allows for the logo to be placed on the far left of the screen and view of the nav-->
+			<div class="navbar-header">
+				<!--button tag with bootstrap class navbar-toggle allows for the use of a hamburger icon and data-toggle collapse allows to control the collapse and data-targer="#myNavbar allows" gives an id to the items that will collapse-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<!--span tag with bootstrap class: icon-bar which displays the horizontal lines to display a full hamburger icon-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--div encloses img with an id to be able to be accessed for css3-->
+				<div id="imgOfLogo">
+					<img src="http://pluspng.com/img-png/audi-logo-png-audi-logo-eps-pdf-500.png" class="img-responsive" alt="audi logo">
+				</div>
+			</div>
+			<!--div tag with bootstrap class to collapse items and the id which is used in a couple of lines before this-->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<!--ul tag with bootstrap class -->
+				<ul class="nav navbar-nav">
+					<!--li tag with bootstrap class: active which shows the page that is current and id created by me to be used in css3-->
+					<li id="navLink1"><a href="index.html">Home</a></li>
+					<!--li tag with class created by me to use in css3 and style the links-->
+					<li class="navLink"><a href="about.html">About</a></li>
+					<li class="navLink"><a href="models.html">Models</a><li>
+					<li class="active navLink"><a href="#">Colors</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<h1 id="h1OfColorPG">Discover the variety of colors</h1>
+	<div id="imgOfRedAudi">
+		<img src="https://cdn.jdpower.com/chromeimagegallery/expanded/transparent/640/2014aud007a_640/2014aud007a_640_01.png" class="img-responsive" alt="Red Audi r8 car">
+	</div>
+	<div id="imgOfOrangeAudi">
+		<img src="https://www.freeiconspng.com/uploads/hd-orange-audi-r8-car-png-24.png" class="img-responsive" alt="Orange Audi r8 car">
+	</div>
+	<div id="imgOfBlueAudi">
+		<img src="https://content.audi.co.uk/dam/7_days/CAD/External%20Assets/R8/R8-Large/003.png" class="img-responsive" alt="Blue Audi r8 car">
+	</div>
+	<div id="imgOfYellowAudi">
+		<img src="https://res.cloudinary.com/carsguide/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/vhs/Audi-R8.png" class="img-responsive" alt="Red Audi r8 car">
+	</div>
+	
+</body>
+</html>
