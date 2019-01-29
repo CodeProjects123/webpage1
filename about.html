@@ -1,139 +1,146 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>About Audi R8</title>
-	<!--link to bootstrap library-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!--use of jquery library-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!--use of bootstrap library-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="screen.css">
-	<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet"></head>
+	<head>
+		<!--used to be able to access library-->
+		<meta charset="utf-8">
+		<!--allows page to become responsive-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--title of page displayed on tab-->
+		<title>About Audi R8</title>
+		<!--link to bootstrap library-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!--use of jquery library-->
+	    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--use of bootstrap library-->
+	    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--link allows access to the css page-->
+		<link rel="stylesheet" type="text/css" href="screen.css">
+		<!--allows access to google font-->
+		<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet"></head>
 
-</head>
-<style>
-* {
-  box-sizing: border-box;
-}</style>
-<body>
-<!--nav bar tag with bootstrap class: navbar-inverse displays a black version of the navbar whereas default is white-->
-	<nav class="navbar navbar-inverse">
-		<!--div tag with bootstrap class: container-fluid allows for the nav bar to change with the width of the screen-->
-		<div class="container-fluid">
-			<!--div tag with bootstrap class navbar-header allows for the logo to be placed on the far left of the screen and view of the nav-->
-			<div class="navbar-header">
-				<!--button tag with bootstrap class navbar-toggle allows for the use of a hamburger icon and data-toggle collapse allows to control the collapse and data-targer="#myNavbar allows" gives an id to the items that will collapse-->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<!--span tag with bootstrap class: icon-bar which displays the horizontal lines to display a full hamburger icon-->
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<!--div encloses img with an id to be able to be accessed for css3-->
-				<div id="imgOfLogo">
-					<img src="http://pluspng.com/img-png/audi-logo-png-audi-logo-eps-pdf-500.png" class="img-responsive" alt="audi logo">
+	</head>
+	<!--needed to add specific styling for this page but did not want to create a new css page due to only one element needed-->
+	<style>
+	* {
+	  box-sizing: border-box;
+	}</style>
+
+	<body>
+	<!--nav bar tag with bootstrap class: navbar-inverse displays a black version of the navbar whereas default is white-->
+		<nav class="navbar navbar-inverse">
+			<!--div tag with bootstrap class: container-fluid allows for the nav bar to change with the width of the screen-->
+			<div class="container-fluid">
+				<!--div tag with bootstrap class navbar-header allows for the logo to be placed on the far left of the screen and view of the nav-->
+				<div class="navbar-header">
+					<!--button tag with bootstrap class navbar-toggle allows for the use of a hamburger icon and data-toggle collapse allows to control the collapse and data-targer="#myNavbar allows" gives an id to the items that will collapse-->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<!--span tag with bootstrap class: icon-bar which displays the horizontal lines to display a full hamburger icon-->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--div encloses img with an id to be able to be accessed for css3-->
+					<div id="imgOfLogo">
+						<img src="http://pluspng.com/img-png/audi-logo-png-audi-logo-eps-pdf-500.png" class="img-responsive" alt="audi logo">
+					</div>
+				</div>
+				<!--div tag with bootstrap class to collapse items and the id which is used in a couple of lines before this-->
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<!--ul tag with bootstrap class -->
+					<ul class="nav navbar-nav">
+						<!--li tag with bootstrap class: active which shows the page that is current and id created by me to be used in css3-->
+						<li id="navLink1"><a href="index.html">Home</a></li>
+						<!--li tag with class created by me to use in css3 and style the links-->
+						<li class="active navLink"><a href="#">About</a></li>
+						<li class="navLink"><a href="models.html">Models</a><li>
+						<li class="navLink"><a href="colors.html">Colors</a></li>
+					</ul>
 				</div>
 			</div>
-			<!--div tag with bootstrap class to collapse items and the id which is used in a couple of lines before this-->
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<!--ul tag with bootstrap class -->
-				<ul class="nav navbar-nav">
-					<!--li tag with bootstrap class: active which shows the page that is current and id created by me to be used in css3-->
-					<li id="navLink1"><a href="index.html">Home</a></li>
-					<!--li tag with class created by me to use in css3 and style the links-->
-					<li class="active navLink"><a href="#">About</a></li>
-					<li class="navLink"><a href="models.html">Models</a><li>
-					<li class="navLink"><a href="colors.html">Colors</a></li>
-				</ul>
+		</nav>
+		<!--title of page with id to style title-->
+		<h1 id="h1OfAboutPG">2018 Audi R8 Specs </h1>
+		<!--div with class row to style the whole content-->
+		<div class="row">
+			<!--div with class column to style all images-->
+			<div class="column">
+				<!--image of car with class to style the image -->
+				<img src="https://www.carmagazine.co.uk/Images/PageFiles/80450/Audi_R8_RWS_9.jpg" class="imgSize" alt="image of engine">
+				<!--div with class to style the text on image-->
+				<div class="descOfImage">Engine</div>
+				<!--div with class to style text on the other side-->
+				<div class="flip-card-back">
+					<h1 class="backOfCardStyle">Engine</h1> 
+					<p>5.2L</p> 
+					<p>V10</p>
+				</div>
+			</div>
+			<div class="column">
+				<img src="https://car-images.bauersecure.com/pagefiles/15350/1040x585/audir8_2015_1.jpg" class="imgSize" alt="image of engine">
+				<div class="descOfImage">Horsepower</div>
+				<div class="flip-card-back">
+					<h1 class="backOfCardStyle">Horsepower</h1> 
+					<p>532 to 610 hp</p> 
+				</div>
+			</div>
+			<div class="column">
+				<img src="http://imagesvc.timeincapp.com/v3/foundry/image/?q=70&w=1440&url=http%3A%2F%2Fd254andzyoxz3f.cloudfront.net%2F1000-horsepower-audi-r8-hero.jpg" class="imgSize" alt="image of engine">
+				<div class="descOfImage">Torque</div>
+				<div class="flip-card-back">
+					<h1 class="backOfCardStyle">Torque</h1> 
+					<p>398 to 413 lb-ft</p> 
+				</div>
+			</div>
+			<div class="column">
+				<img src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/17q2/678295/2017-audi-r8-spyder-instrumented-test-review-car-and-driver-photo-683069-s-original.jpg" class="imgSize" alt="image of engine">
+				<div class="descOfImage">Price</div>
+				<div class="flip-card-back">
+					<h1 class="backOfCardStyle">Price</h1>
+					<p>From $138,700</p>
+				</div>
+			</div>
+			<div class="column">
+				<img src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/18q1/699327/2018-audi-r8-rws-first-drive-review-car-and-driver-photo-703804-s-original.jpg" class="imgSize" alt="image of engine">
+				<div class="descOfImage">Acceleration (0-60mph)</div>
+				<div class="flip-card-back">
+					<h1 class="backOfCardStyle">Acceleration</h1> 
+					<p>3.7 seconds</p> 
+				</div>
+			</div>
+			<div class="column">
+				<img src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/17q3/685272/2018-audi-r8-v10-rws-official-photos-and-info-news-car-and-driver-photo-690439-s-original.jpg" class="imgSize" alt="image of engine">
+				<div class="descOfImage">Valvetrain</div>
+				<div class="flip-card-back">
+					<h1 class="backOfCardStyle">Horsepower</h1> 
+					<p>532 to 610 hp</p> 
+				</div>
+			</div>
+			<div class="column">
+				<img src="gastank.PNG" class="imgSize" alt="image of gas tank">
+				<div class="descOfImage">MPG</div>
+				<div class="flip-card-back">
+					<h1 class="backOfCardStyle">MPG</h1> 
+					<p>Up to 14 city / 25 highway</p> 
+				</div>
+			</div>
+			<div class="column">
+				<img src="transmissionOfAudi.PNG" class="imgSize" alt="image of transmission">
+				<div class="descOfImage">Transmission</div>
+				<div class="flip-card-back">
+					<h1 class="backOfCardStyle">Transmission</h1> 
+					<p>Seven-speed S tronic® dual-clutch</p>
+					<p>transmission with rear-wheel drive</p> 
+				</div>
+			</div>
+			<div class="column">
+				<img src="speedOfAudi.PNG" class="imgSize" alt="image of speedometer">
+				<div class="descOfImage">Top Speed</div>
+				<div class="flip-card-back">
+					<h1 class="backOfCardStyle">Top Speed</h1> 
+					<p>199 mph</p> 
+				</div>
 			</div>
 		</div>
-	</nav>
-	<h1 id="h1OfAboutPG">2018 Audi R8 Specs </h1>
-	
-	<div class="row">
-		<div class="column">
-			<img src="https://www.carmagazine.co.uk/Images/PageFiles/80450/Audi_R8_RWS_9.jpg" class="imgSize" alt="image of engine">
-			<div class="descOfImage">Engine</div>
-			<div class="flip-card-back">
-				<h1 class="backOfCardStyle">Engine</h1> 
-				<p>5.2L</p> 
-				<p>V10</p>
-			</div>
-		</div>
-		<div class="column">
-			<img src="https://car-images.bauersecure.com/pagefiles/15350/1040x585/audir8_2015_1.jpg" class="imgSize" alt="image of engine">
-			<div class="descOfImage">Horsepower</div>
-			<div class="flip-card-back">
-				<h1 class="backOfCardStyle">Horsepower</h1> 
-				<p>532 to 610 hp</p> 
-			</div>
-		</div>
-		<div class="column">
-			<img src="http://imagesvc.timeincapp.com/v3/foundry/image/?q=70&w=1440&url=http%3A%2F%2Fd254andzyoxz3f.cloudfront.net%2F1000-horsepower-audi-r8-hero.jpg" class="imgSize" alt="image of engine">
-			<div class="descOfImage">Torque</div>
-			<div class="flip-card-back">
-				<h1 class="backOfCardStyle">Torque</h1> 
-				<p>398 to 413 lb-ft</p> 
-			</div>
-		</div>
-		
-		<div class="column">
-			<img src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/17q2/678295/2017-audi-r8-spyder-instrumented-test-review-car-and-driver-photo-683069-s-original.jpg" class="imgSize" alt="image of engine">
-			<div class="descOfImage">Price</div>
-			<div class="flip-card-back">
-				<h1 class="backOfCardStyle">Price</h1>
-				<p>From $138,700</p>
-			</div>
-		</div>
-		<div class="column">
-			<img src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/18q1/699327/2018-audi-r8-rws-first-drive-review-car-and-driver-photo-703804-s-original.jpg" class="imgSize" alt="image of engine">
-			<div class="descOfImage">Acceleration (0-60mph)</div>
-			<div class="flip-card-back">
-				<h1 class="backOfCardStyle">Acceleration</h1> 
-				<p>3.7 seconds</p> 
-			</div>
-		</div>
-		<div class="column">
-			<img src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/17q3/685272/2018-audi-r8-v10-rws-official-photos-and-info-news-car-and-driver-photo-690439-s-original.jpg" class="imgSize" alt="image of engine">
-			<div class="descOfImage">Valvetrain</div>
-			<div class="flip-card-back">
-				<h1 class="backOfCardStyle">Horsepower</h1> 
-				<p>532 to 610 hp</p> 
-			</div>
-		</div>
-		<div class="column">
-			<img src="gastank.PNG" class="imgSize" alt="image of gas tank">
-			<div class="descOfImage">MPG</div>
-			<div class="flip-card-back">
-				<h1 class="backOfCardStyle">MPG</h1> 
-				<p>Up to 14 city / 25 highway</p> 
-			</div>
-		</div>
-	
-		
-		<div class="column">
-			<img src="transmissionOfAudi.PNG" class="imgSize" alt="image of transmission">
-			<div class="descOfImage">Transmission</div>
-			<div class="flip-card-back">
-				<h1 class="backOfCardStyle">Transmission</h1> 
-				<p>Seven-speed S tronic® dual-clutch</p>
-				<p>transmission with rear-wheel drive</p> 
-			</div>
-		</div>
-		
-		
-		<div class="column">
-			<img src="speedOfAudi.PNG" class="imgSize" alt="image of speedometer">
-			<div class="descOfImage">Top Speed</div>
-			<div class="flip-card-back">
-				<h1 class="backOfCardStyle">Top Speed</h1> 
-				<p>199 mph</p> 
-			</div>
-		</div>
-	</div>
-	
-</body>
+
+	</body>
 </html>
