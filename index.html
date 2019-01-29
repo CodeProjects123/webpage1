@@ -1,68 +1,70 @@
-<!--html5,css3,bootstrap,javascript,look inot react-->
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<!--used to make this page mobile friendly-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--title on tab-->
-	<title>AUDI R8</title>
-	
-	<!--link to bootstrap library-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!--use of jquery library-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!--use of bootstrap library-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="screen.css">
-	<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet"></head>
 
-<body>
-	<!--nav bar tag with bootstrap class: navbar-inverse displays a black version of the navbar whereas default is white-->
-	<nav class="navbar navbar-inverse">
-		<!--div tag with bootstrap class: container-fluid allows for the nav bar to change with the width of the screen-->
-		<div class="container-fluid">
-			<!--div tag with bootstrap class navbar-header allows for the logo to be placed on the far left of the screen and view of the nav-->
-			<div class="navbar-header">
-				<!--button tag with bootstrap class navbar-toggle allows for the use of a hamburger icon and data-toggle collapse allows to control the collapse and data-targer="#myNavbar allows" gives an id to the items that will collapse-->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<!--span tag with bootstrap class: icon-bar which displays the horizontal lines to display a full hamburger icon-->
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<!--div encloses img with an id to be able to be accessed for css3-->
-				<div id="imgOfLogo">
-					<img src="audilogo.png" class="img-responsive" alt="audi logo">
+<!DOCTYPE html>
+<html lang="en">
+	<head>		
+		<!--to be able to use the library-->
+		<meta charset="utf-8">
+		<!--used to make this page mobile friendly-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--title on tab-->
+		<title>AUDI R8</title>
+		<!--link to bootstrap library-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!--use of jquery library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--use of bootstrap library-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--link to css page-->
+		<link rel="stylesheet" type="text/css" href="screen.css">
+		<!--link to font-->
+		<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+	</head>
+
+	<body>
+		<!--nav bar tag with bootstrap class: navbar-inverse displays a black version of the navbar whereas default is white-->
+		<nav class="navbar navbar-inverse">
+			<!--div tag with bootstrap class: container-fluid allows for the nav bar to change with the width of the screen-->
+			<div class="container-fluid">
+				<!--div tag with bootstrap class navbar-header allows for the logo to be placed on the far left of the screen and view of the nav-->
+				<div class="navbar-header">
+					<!--button tag with bootstrap class navbar-toggle allows for the use of a hamburger icon and data-toggle collapse allows to control the collapse and data-targer="#myNavbar allows" gives an id to the items that will collapse-->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<!--span tag with bootstrap class: icon-bar which displays the horizontal lines to display a full hamburger icon-->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--div encloses img with an id to be able to be accessed for css3-->
+					<div id="imgOfLogo">
+						<img src="audilogo.png" class="img-responsive" alt="audi logo">
+					</div>
+				</div>
+				<!--div tag with bootstrap class to collapse items and the id which is used in a couple of lines before this-->
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<!--ul tag with bootstrap class -->
+					<ul class="nav navbar-nav">
+						<!--li tag with bootstrap class: active which shows the page that is current and id created by me to be used in css3-->
+						<li class="active" id="navLink1"><a href="#">Home</a></li>
+						<!--li tag with class created by me to use in css3 and style the links-->
+						<li class="navLink"><a href="about.html">About</a></li>
+						<li class="navLink"><a href="models.html">Models</a><li>
+						<li class="navLink"><a href="colors.html">Colors</a></li>
+					</ul>
 				</div>
 			</div>
-			<!--div tag with bootstrap class to collapse items and the id which is used in a couple of lines before this-->
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<!--ul tag with bootstrap class -->
-				<ul class="nav navbar-nav">
-					<!--li tag with bootstrap class: active which shows the page that is current and id created by me to be used in css3-->
-					<li class="active" id="navLink1"><a href="#">Home</a></li>
-					<!--li tag with class created by me to use in css3 and style the links-->
-					<li class="navLink"><a href="about.html">About</a></li>
-					<li class="navLink"><a href="models.html">Models</a><li>
-					<li class="navLink"><a href="colors.html">Colors</a></li>
-				</ul>
+		</nav>
+		<!--div tag with bootstrap class that allows the heading tag to change with the size of the screen-->
+		<div class="container-fluid">	
+			<!--div tag was created to be able to style h1 tag and use in css3-->
+			<div class="h1Box">
+				<!---->
+				<h1 id="h1OfIndexPG"><center>Simplistic</center> <center>yet</center> <center>Beautiful</center></h1>
 			</div>
 		</div>
-	</nav>
-	<!--div tag with bootstrap class that allows the heading tag to change with the size of the screen-->
-	<div class="container-fluid">	
-		<!--div tag was created to be able to style h1 tag and use in css3-->
-		<div class="h1Box">
-			<!---->
-			<h1 id="h1OfIndexPG"><center>Simplistic</center> <center>yet</center> <center>Beautiful</center></h1>
+		<!--div with id to use style image and used bootstrap class to make it responsive-->
+		<div id="imgOfAudi">
+			<img src="Audi-R8.png" class="img-responsive" alt="Audi r8 car">
 		</div>
-	</div>
-		
-	
-	<div id="imgOfAudi">
-		<img src="Audi-R8.png" class="img-responsive" alt="Audi r8 car">
-	</div>
 
-</body>
+	</body>
 </html>
