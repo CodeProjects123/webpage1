@@ -123,6 +123,10 @@ a{
 		padding-left: 30px;
 		float: left;
 	}
+	#navLink1{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 /* On smaller screens, decrease text size */
@@ -137,6 +141,10 @@ a{
 	.nav{
 		padding-left: 30px;
 		float: left;
+	}
+	#navLink1{
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 	
 }
