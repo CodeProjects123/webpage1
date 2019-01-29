@@ -103,30 +103,47 @@ a{
 /*media queries*/
 @media screen and (max-width:800px) {
   .h1Box {
-    width:100%; 
+    	width:100%; 
 	margin-top:5px;
 	margin-left: 10px;
   }
 }
-
+@media screen and (max-width:992px){
+	#imgOfAudi{
+		width:500px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto
+	}
+	.h1OfIndexPG{
+		display: block;
+		text-align: center;
+	}
+	.nav{
+		float: left;
+	}
+}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
-  #imgOfRedAudi{
-	display: block;
-	max-width: 70%;
-    height: auto;
-	position: fixed;\
-	display: inline-block;
- }
+ 	 #imgOfRedAudi{
+		display: block;
+		max-width: 70%;
+   		 height: auto;
+		position: fixed;
+		display: inline-block;
+ 	}
+	.nav{
+		float: left;
+	}
+	
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   #imgOfBlueAudi{
-	  
-	position: fixed;
+  	position: fixed;
 	max-width: 120%;
-    height: auto;
+   	height: auto;
 	
  }
 }
@@ -135,7 +152,7 @@ a{
   #imgOfOrangeAudi{
 	display: block;
 	max-width: 70%;
-    height: auto;
+    	height: auto;
 	display: inline-block;
  }
 }
@@ -144,7 +161,7 @@ a{
   #imgOfYellowAudi{
 	display: block;
 	max-width: 70%;
-    height: auto;
+    	height: auto;
 	display: inline-block;
  }
 }
