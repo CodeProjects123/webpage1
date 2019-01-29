@@ -127,6 +127,10 @@ a{
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+	.navbar-collapse {
+  	 	padding-right: 100px;
+   		padding-left: 100px;
+	}
 }
 
 /* On smaller screens, decrease text size */
@@ -145,6 +149,10 @@ a{
 	#navLink1{
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+	.navbar-collapse {
+  	 	padding-right: 100px;
+   		padding-left: 100px;
 	}
 	
 }
