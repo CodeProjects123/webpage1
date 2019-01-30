@@ -38,25 +38,6 @@
 #imgOfLogo{
 	width: 30%;
 }
-.imgSize{
-	float: left;
-	width: 100%;
-	/*-wbkit-filter: grayscale(100%);
-	filter: grayscale(100%);*/
-	box-shadow: 0 3000px rgba(0, 0, 0, 0.4) inset;
-}
-.imgSize:before {
-    background: rgba(0,0,0, 0.6);
-  }
-.descOfImage{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.7);
-  
-}
-/***styling navigation bar***/
 .nav{
 	float: right;
 }
@@ -64,11 +45,13 @@
 	padding-left: 30px;
 	padding-right: 30px;
 }
+
+
 a{
 	font-family: 'Prata', serif;
 	
 }
-/***styling text***/
+
 #h1MidReference{
 	padding-left: 310px;
 }
@@ -77,6 +60,8 @@ a{
 	margin-top:160px;
 	margin-left: 300px;
 	width: 300px;
+	
+	
 }
 #h1OfAboutPG{
 	font-family: 'Prata', serif;
@@ -89,13 +74,13 @@ a{
 	color: black;
 	font-size: 45px;
 }
+
 #h1OfColorPG{
 	font-size: 45px;
 	padding-top: 25px;
 	font-family: 'Prata', serif;
 	text-align: center;
 }
-/***media queries***/
 @media screen and (max-width:992px){
 	#imgOfAudi{
         max-width: 100%;
@@ -127,8 +112,8 @@ a{
 @media screen and (max-width:600px){
 	#imgOfAudi{
 		max-width: 100%;
-        max-height: 100vh;
-        margin: auto;
+        	max-height: 100vh;
+        	margin: auto;
 		position: absolute;
 		bottom: 0; 
 		
@@ -198,13 +183,7 @@ a{
 	
  }
 }
-/* Responsive layout */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-/***styling column***/
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
@@ -215,10 +194,11 @@ a{
   font-family: 'Prata', serif;
   font-size: 30px;
   cursor: pointer;
-  -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-  -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-  box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+   -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+   -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+   box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
 }
+
 .column:before{
     content: "";
     display: block;
@@ -239,6 +219,43 @@ a{
   .column:hover:before {
     background: none;
   }
+  
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+	
+
+ 
+}
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.imgSize{
+	float: left;
+	width: 100%;
+	/*-wbkit-filter: grayscale(100%);
+	filter: grayscale(100%);*/
+	box-shadow: 0 3000px rgba(0, 0, 0, 0.4) inset;
+}
+.imgSize:before {
+    background: rgba(0,0,0, 0.6);
+  }
+.descOfImage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.7);
+  
+}
+.row{
+	perspective: 1000px;
+}
 .column{
 	position: relative;
 	transition: transform 0.8s;
@@ -249,17 +266,6 @@ a{
 	backface-visibility: hidden;
 	transform: rotateX(180deg);
 }
-  
-/***styling row***/
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row{
-	perspective: 1000px;
-}
-/***styling card***/
 .flip-card-back {
   position: absolute;
   width: 100%;
@@ -274,4 +280,5 @@ a{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-decoration: underline;
- }
+    
+}
