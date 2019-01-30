@@ -1,5 +1,4 @@
-
-
+/*styling images*/
 #imgOfAudi{
 	bottom: 10%;
 	right: 0%;
@@ -11,10 +10,7 @@
 	right: 3%;
 	position: absolute;
 	width:400px;
-    
-	
 }
-
 #imgOfBlueAudi{
 	bottom: 25%;
 	left: 12%;
@@ -24,9 +20,8 @@
 #imgOfOrangeAudi{
 	bottom: 30%;
 	right: 20%;
-	width:400px; /* you can use % */
-   
-	position: absolute;
+	width:400px; 
+  	position: absolute;
 }
 #imgOfYellowAudi{
 	bottom: 0%;
@@ -43,20 +38,39 @@
 #imgOfLogo{
 	width: 30%;
 }
-.nav{
-	float: right;
+.imgSize{
+	float: left;
+	width: 100%;
+	/*-wbkit-filter: grayscale(100%);
+	filter: grayscale(100%);*/
+	box-shadow: 0 3000px rgba(0, 0, 0, 0.4) inset;
+	
+	
 }
+.imgSize:before {
+    background: rgba(0,0,0, 0.6);
+ }
+.descOfImage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.7);
+  
+}
+/*styling navigation bar*/
 .navLink{
 	padding-left: 30px;
 	padding-right: 30px;
 }
-
-
+.nav{
+	float: right;
+}
 a{
 	font-family: 'Prata', serif;
 	
 }
-
+/*styling titles of pages*/
 #h1MidReference{
 	padding-left: 310px;
 }
@@ -65,8 +79,6 @@ a{
 	margin-top:160px;
 	margin-left: 300px;
 	width: 300px;
-	
-	
 }
 #h1OfAboutPG{
 	font-family: 'Prata', serif;
@@ -88,11 +100,19 @@ a{
 	font-family: 'Prata', serif;
 	text-align: center;
 }
+/*media queries*/
+@media screen and (max-width:800px) {
+  .h1Box {
+    	width:100%; 
+	margin-top:5px;
+	margin-left: 10px;
+  }
+}
 @media screen and (max-width:992px){
 	#imgOfAudi{
-        max-width: 100%;
-        max-height: 100vh;
-        margin: auto;
+		max-width: 100%;
+        	max-height: 100vh;
+        	margin: auto;
 		position: absolute;
 		bottom: 0; 
 	}
@@ -112,19 +132,17 @@ a{
   	 	padding-right: 100px;
    		padding-left: 100px;
 	}
-	.column {
-		width: 100%;
-  }
 }
-@media screen and (max-width:600px){
-	#imgOfAudi{
-		max-width: 100%;
-        max-height: 100vh;
-        margin: auto;
-		position: absolute;
-		bottom: 0; 
-		
-	}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+ 	 #imgOfRedAudi{
+		display: block;
+		max-width: 70%;
+   		 height: auto;
+		position: fixed;
+		display: inline-block;
+ 	}
 	.nav{
 		padding-left: 30px;
 		float: left;
@@ -138,37 +156,19 @@ a{
    		padding-left: 100px;
 	}
 	
-}
-@media screen and (max-width:800px) {
-  .h1Box {
-    width:100%; 
-	margin-top:5px;
-	margin-left: 10px;
-  }
-  .column {
-    width: 100%;
-  }
-}
-
-
-
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  #imgOfRedAudi{
-	display: block;
-		max-width: 70%;
-   		 height: auto;
-		position: fixed;
-		display: inline-block;
- }
- 
+	#imgOfAudi{
+		max-width: 100%;
+       		max-height: 100vh;
+        	margin: auto;
+		position: absolute;
+		bottom: 0; 
+		
+	}
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   #imgOfBlueAudi{
-	  
-	position: fixed;
+  	position: fixed;
 	max-width: 120%;
    	height: auto;
 	
@@ -179,9 +179,8 @@ a{
   #imgOfOrangeAudi{
 	display: block;
 	max-width: 70%;
-    height: auto;
-	float: left; 
-
+    	height: auto;
+	display: inline-block;
  }
 }
 /* On smaller screens, decrease text size */
@@ -189,12 +188,16 @@ a{
   #imgOfYellowAudi{
 	display: block;
 	max-width: 70%;
-    height: auto;
-	float: left; 
-	
+    	height: auto;
+	display: inline-block;
  }
 }
-/* Create three equal columns that floats next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+   	width: 100%;
+  }
+}
+/* Styling columns */
 .column {
   float: left;
   width: 33.33%;
@@ -204,16 +207,10 @@ a{
   color: white;
   font-family: 'Prata', serif;
   font-size: 30px;
-    
-   
-   cursor: pointer;
-   -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-   -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-   box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-   
-
-  
-  
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+  -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+  box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
 }
 
 .column:before{
@@ -236,49 +233,7 @@ a{
   .column:hover:before {
     background: none;
   }
-  
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-	
-
- 
-}
-
-
-
-/* Responsive layout */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-.imgSize{
-	float: left;
-	width: 100%;
-	/*-wbkit-filter: grayscale(100%);
-	filter: grayscale(100%);*/
-	box-shadow: 0 3000px rgba(0, 0, 0, 0.4) inset;
-	
-	
-}
-.imgSize:before {
-    background: rgba(0,0,0, 0.6);
-  }
-.descOfImage{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.7);
-  
-}
-.row{
-	perspective: 1000px;
-}
-.column{
+  .column{
 	position: relative;
 	transition: transform 0.8s;
 	transform-style: preserve-3d;
@@ -288,11 +243,20 @@ a{
 	backface-visibility: hidden;
 	transform: rotateX(180deg);
 }
+/*styling row */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row{
+	perspective: 1000px;
+}
+/*styling cards*/
 .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
- 
   background-color: #800000;
   color: white;
   transform: rotateX(180deg);
