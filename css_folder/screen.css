@@ -156,6 +156,14 @@ a{
    		padding-left: 100px;
 	}
 	
+	#imgOfAudi{
+		max-width: 100%;
+       		max-height: 100vh;
+        	margin: auto;
+		position: absolute;
+		bottom: 0; 
+		
+	}
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
