@@ -168,6 +168,7 @@ a{
         max-height: 100vh;
         margin: auto;
 	position: static;
+	transform: scaleX(-1);
 	}
 }
 /* On smaller screens, decrease text size */
@@ -186,6 +187,7 @@ a{
         max-height: 100vh;
         margin: auto;
 	position: static;
+	transform: scaleX(1);
 	}
 }
 /* Create three equal columns that floats next to each other */
