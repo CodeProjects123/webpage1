@@ -44,8 +44,14 @@
 	float: right;
 }
 .navLink{
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#navLink1{
+	padding-right: 20px;
+	}
+.navLink2{
+	padding-left: 20px;
 }
 
 
