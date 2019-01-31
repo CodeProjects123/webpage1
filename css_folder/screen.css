@@ -53,6 +53,9 @@
 .navLink2{
 	padding-left: 10px;
 }
+.navbar{
+	border-radius: 0;
+}
 
 a{
 	font-family: 'Prata', serif;
