@@ -153,43 +153,40 @@ a{
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   #imgOfRedAudi{
-	display: block;
-		max-width: 70%;
-   		 height: auto;
-		position: fixed;
-		display: inline-block;
+	max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+	position: static;
+	
  }
  
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   #imgOfBlueAudi{
-	  
-	position: fixed;
-	max-width: 120%;
-   	height: auto;
-	
- }
+	 max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+	position: static;
+	}
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   #imgOfOrangeAudi{
-	display: block;
-	max-width: 70%;
-        height: auto;
-	float: left; 
-
- }
+	max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+	position: static;
+	}
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   #imgOfYellowAudi{
-	display: block;
-	max-width: 70%;
-        height: auto;
-	float: left; 
-	
- }
+	max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+	position: static;
+	}
 }
 /* Create three equal columns that floats next to each other */
 .column {
@@ -247,25 +244,13 @@ a{
     width: 100%;
     transition: transform 2s;
   }
-  .row1:after{
-	content: "";
-	display: table;
-	clear: both;
- }
- #c1{
+ .row1{
+	margin: 0;
+        height: 100%;
 	width: 100%;
-	float: left;
-	position: relative;
-  }
- #c1:before{
-	content: "";
-        display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
- }
+	padding: 0;
+	}
+
 }
 .imgSize{
 	float: left;
