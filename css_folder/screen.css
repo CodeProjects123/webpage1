@@ -110,8 +110,16 @@ a{
 		float: left;
 	}
 	#navLink1{
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navLink{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navLink2{
+		padding-left: 0;
+		padding-right: 0;
 	}
 	
 	.column {
@@ -132,8 +140,16 @@ a{
 		float: left;
 	}
 	#navLink1{
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navLink{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navLink2{
+		padding-left: 0;
+		padding-right: 0;
 	}
 	
 	
